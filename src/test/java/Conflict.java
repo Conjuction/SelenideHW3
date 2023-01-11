@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class Conflict {
     @Test
-    void solutionsHover(){
+    void solutions(){
         open("https://github.com/");
         $("div.header-menu-wrapper").$(byText("Solutions")).hover();
         $(byText("Enterprise")).click();
